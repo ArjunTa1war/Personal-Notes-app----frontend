@@ -1,7 +1,10 @@
-import React from 'react'
-
+import React, { useContext } from 'react'
+import Notes from './Notes';
+import AddNote from './AddNote';
 export default function Home() {
   return (
-    <div>Home</div>
+    <div>
+    <Notes />
+    </div>
   )
 }
