@@ -15,7 +15,7 @@ export default function NoteItem(props) {
         <div className="card-body">
          <h5 className="card-title">{note.title}</h5>
         <p className="card-text">{note.description}.</p>
-          <FontAwesomeIcon className="mx-2" icon={faTrash} onClick={()=>{deleteNote(note._id)}} style={{cursor:"pointer"}} />
+          <FontAwesomeIcon className="mx-2" icon={faTrash} onClick={()=>{deleteNote(note._id);props.showAlert("Deleted Successfully","success");}} style={{cursor:"pointer"}} />
           <FontAwesomeIcon className="mx-2"icon={faPenToSquare} onClick={()=>{updatenote(note)}} style={{cursor:"pointer"}} />
         </div>
     </div>
